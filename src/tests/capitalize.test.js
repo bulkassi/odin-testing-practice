@@ -1,4 +1,4 @@
-import { capitalize } from "../capitalize";
+import { capitalize } from "../functions/capitalize";
 
 describe.each([
   {
