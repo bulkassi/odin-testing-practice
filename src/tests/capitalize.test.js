@@ -19,24 +19,6 @@ describe.each([
   });
 });
 
-test("Special case: first char is not a letter", () => {
-  const specialStrings = {
-    "$ello, world!": {
-      expectedString: "$Ello, world!",
-    },
-    "?hello, world!": {
-      expectedString: "?Hello, world!",
-    },
-    "  hello, world!": {
-      expectedString: "  Hello, world!",
-    },
-  };
-
-  for (const [string, results] of Object.entries(specialStrings)) {
-    expect(capitalize(string)).toBe(results.expectedString);
-  }
-});
-
 describe.each([
   {
     string: "$ello, world!",
